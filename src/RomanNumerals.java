@@ -53,35 +53,5 @@ public class RomanNumerals {
 		else return true;
 	}
 	
-	//4. Sum up values
-	public int sumArabicValues(String RomanNum) throws RomanNumeralsException {
-		
-		int result = 0;
-				
-		for(int i = 0; i < RomanNum.length(); i++) {
-			String tmpRomanNum = String.valueOf(RomanNum.charAt(i));
-			int ArabicNumber = getSingleArabicValue(tmpRomanNum);
-			result = result + ArabicNumber;
-		}
-		return result;
-	}
-	//5. Substract values
-	public int subArabicValues(String RomanNum) throws RomanNumeralsException {
-		
-		int result = 0;
-		
-		/*
-		if(RomanNum.length()>2){
-			throw new RomanNumeralsException("Invalid Input");
-		}*/
-
-				
-		for(int i = 0; i < RomanNum.length(); i++) {
-			String tmpRomanNum = String.valueOf(RomanNum.charAt(i));
-			int ArabicNumber = getSingleArabicValue(tmpRomanNum);
-			result = result + ArabicNumber;
-		}
-		return result;
-	}
 }
 
